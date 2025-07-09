@@ -127,9 +127,10 @@
         @apply flex-1 font-bold placeholder:font-semibold placeholder:text-black-100 w-full h-auto outline-none;
     }
 
-    .search-btn {
-        @apply size-[50px] rounded-full bg-black flex justify-center items-center !important;
-    }
+   .search-btn {
+  @apply w-[50px] h-[50px] rounded-full bg-black flex justify-center items-center !important;
+}
+
 
     /* startupcard */
     .startup-card {
