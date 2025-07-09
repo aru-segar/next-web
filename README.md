@@ -1,39 +1,36 @@
-# 🚀 Pitchify – Startup Directory Platform
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A **Next.js 15** platform where entrepreneurs can submit their startup ideas for virtual pitch competitions, browse others' ideas, and gain exposure – all within a clean, minimal, and modern UI.
+## Getting Started
 
----
+First, run the development server:
 
-## 🤖 Introduction
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-Pitchify is a directory-style web application for showcasing startup ideas. Users can pitch their startups, explore others, and get recognized by editors through a seamless and minimal design.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-> 🧠 Built during the [JavaScript Mastery](https://www.youtube.com/c/JavaScriptMastery) tutorial – perfect for visual learners!
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
----
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## ⚙️ Tech Stack
+## Learn More
 
-- ⚛️ React 19  
-- 🚀 Next.js 15  
-- 🎨 TailwindCSS  
-- 🧩 ShadCN UI  
-- 🧠 Sanity (Headless CMS)  
-- 🧑‍💻 TypeScript  
-- 🔐 NextAuth (GitHub OAuth)
+To learn more about Next.js, take a look at the following resources:
 
----
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## 🔋 Features
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-✅ **Live Content API** – Dynamic pitch content from Sanity  
-✅ **GitHub Authentication** – Easy login with GitHub  
-✅ **Pitch Submission** – Add title, description, category & media  
-✅ **Pitch Feed** – Browse ideas with filtering options  
-✅ **Pitch Details** – Multimedia pitch detail pages  
-✅ **Profile Page** – Track your submissions  
-✅ **Editor Picks** – Admin-curated highlights  
-✅ **Views Counter** – Track pitch popularity  
-✅ **Search** – Smart search for fast discovery  
-✅ **Minimalistic UI** – Sleek, simple, and user-friendly interface
+## Deploy on Vercel
 
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
