@@ -5,12 +5,21 @@ const nextConfig: NextConfig = {
     dangerouslyAllowSVG: true,
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: '*',
-        pathname: '/**',
-      }
-    ]
-  }
+        protocol: "https",
+        hostname: "*",
+        pathname: "/**",
+      },
+    ],
+  },
+
+  // experimental: {
+  //   ppr: "incremental",
+  // },
+  // devIndicators: {
+  //   appIsrStatus: true,
+  //   buildActivity: true,
+  //   buildActivityPosition: "bottom-right",
+  // },
 };
 
 export default nextConfig;
