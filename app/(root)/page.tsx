@@ -1,19 +1,12 @@
 import SearchForm from "@/components/SearchForm";
-import StartupCard from "@/components/StartupCard";
+import StartupCard, { StartupCardType } from "@/components/StartupCard";
+import { client } from "@/sanity/lib/client";
+import { STARTUPS_QUERY } from "@/sanity/lib/queries";
 
 export default async function Home({ searchParams }: { searchParams: Promise<{ query?: string }> }) {
   const { query } = await searchParams;
 
-  const posts = [{
-    _createdAt: new Date(),
-    views: 55,
-    author: { _id: 1, name: 'Aruniga'},
-    _id: 1,
-    description: "This is a sample startup description. It provides an overview of the startup's mission, vision, and key offerings. The description should be concise yet informative, highlighting the unique aspects of the startup.",
-    image: "https://cdn.pixabay.com/photo/2017/09/27/10/31/robot-2791677_1280.jpg",
-    category: "Robots",
-    title: "We Robots",
-  }];
+  const posts = await client.fetch(STARTUPS_QUERY)
 
   return (
     <>
@@ -33,7 +26,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ q
         <ul className="card_grid">
           {posts?.length > 0 ? (
             posts.map((post: StartupCardType) => (
-              <StartupCard key={post?._id} post={post}/>
+              <StartupCard key={post?._id} post={post} />
             ))
           ) : (
             <p className="no-results">
